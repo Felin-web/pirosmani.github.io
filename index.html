@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.4/swiper-bundle.min.css"
+        integrity="sha512-Uny/q0WcgHTmPEwEnudIstSn9ITJ5A4M69WwQ8kii9QmCKfIgwLZQjEo7W0O4yZpamS29cJP0LGrPqFBEzINIw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header>
+    <div class="container">
+        <nav class="nav flex-ai">
+            <img class="menu__open" src="images/iconsprite/menu-icon.svg" alt="">
+            <div class="nav__menu">
+                <div class="nav__menu__item">
+                    <span>Меню</span>
+                    <div class="nav__menu__sub">
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/soup-b.svg" alt="">Супы</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/hachapuri-b.svg" alt="">Хачапури</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/zakuski-b.svg" alt="">Холодные
+                            закуски</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/hincali-b.svg" alt="">Хинкали</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/shashlik-b.svg" alt="">Шашлык</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/sauce-b.svg" alt="">Соусы</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/salad-b.svg" alt="">Салаты</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/bluda-b.svg" alt="">Горячие
+                            блюда</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/garnir-b.svg" alt="">Гарнир</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/desert-b.svg" alt="">Десерты</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/drink-b.svg" alt="">Напитки</a>
+                    </div>
+                </div>
+                <a href="delivery.html" class="nav__menu__item">Доставка</a>
+                <a href="pay.html" class="nav__menu__item">Оплата</a>
+                <a onclick="ShowModal('#booking-modal')" class="nav__menu__item">Бронь стола</a>
+            </div>
+            <a href="index.html" class="logo"><img src="images/logo.jpg" alt="" class="nav__logo logo"></a>
+            <div class="nav__right flex-ai">
+                <a href="tel:+380999999999" class="phone">
+                    <img src="images/iconsprite/phone.svg" alt="">
+                    <span>+7 (831) 282-60-00</span>
+                </a>
+                <a onclick="ShowModal('#login-modal')">
+                    <img src="images/iconsprite/person.svg" alt="">
+                </a>
+                <a href="cart.html">
+                    <img src="images/iconsprite/shopping-cart.svg" alt="">
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="sidebar">
+        <div class="sidebar__inner">
+                <div class="sidebar__top">
+                        <img class="menu__close" src="images/iconsprite/menu/back-menu.svg" alt="">
+                        <a class="sidebar__logo" href="index.html"><img src="images/logo.jpg" class="logo" alt=""></a>
+                </div>
+                <div class="menu">
+                        <div class="menu__item">
+                                <a class="menu__sub-btn" href="index.html"><i class="fa fa-home ico"></i>Главная</a>
+                        </div>
+                        <div class="menu__item">
+                                <a class="menu__sub-btn"><img class="ico" src="images/iconsprite/menu/menu.svg"
+                                                alt="">Меню <i class="fas fa-angle-right dropdown"></i></a>
+                                <div class="menu__sub">
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/soup.svg" alt="">Супы</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/hachapuri.svg"
+                                                        alt="">Хачапури</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/zakuski.svg"
+                                                        alt="">Холодные
+                                                закуски</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/hincali.svg"
+                                                        alt="">Хинкали</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/shashlik.svg"
+                                                        alt="">Шашлык</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/sauce.svg"
+                                                        alt="">Соусы</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/salad.svg"
+                                                        alt="">Салаты</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/bluda.svg" alt="">Горячие
+                                                блюда</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/garnir.svg"
+                                                        alt="">Гарнир</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/desert.svg"
+                                                        alt="">Десерты</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/drink.svg"
+                                                        alt="">Напитки</a>
+                                </div>
+                        </div>
+                        <div class="menu__item">
+                                <a href="delivery.html" class="menu__sub-btn"><img class="ico"
+                                                src="images//iconsprite/menu/delivery.svg" alt="">Доставка</a>
+                        </div>
+                        <div class="menu__item">
+                                <a href="pay.html" class="menu__sub-btn"><img class="ico"
+                                                src="images//iconsprite/menu/pay.svg" alt="">Оплата</a>
+                        </div>
+                        <div class="menu__item">
+                                <a href="vacancy.html" class="menu__sub-btn"><img class="ico"
+                                                src="images//iconsprite/menu/vacansy.svg" alt="">Вакансии</a>
+                        </div>
+                        <div class="menu__item">
+                                <a class="menu__sub-btn" onclick="ShowModal('#booking-modal')"><i
+                                                class="far fa-calendar-alt ico"></i>Бронь
+                                        стола</a>
+                        </div>
+                        <div class="menu__item">
+                                <a href="support.html" class="menu__sub-btn"><img class="ico"
+                                                src="images//iconsprite/menu/support.svg" alt="">Поддержка</a>
+                        </div>
+                </div>
+        </div>
+</div>
+    <main>
+        <section>
+            <div class="container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide banner">
+                            <div class="banner__data">
+                                <h3 class="banner__header">Подарок на первый заказ</h3>
+                                <p class="banner__text">Получите 500 рублей<br>за подписку на рассылку</p>
+                                <a class="banner__button" onclick="ShowModal('#mail-modal')">Подписаться</a>
+                            </div>
+                            <img src="images/banner-img.jpg" alt="" class="banner__img">
+                        </div>
+                        <div class="swiper-slide banner">
+                            <div class="banner__data">
+                                <h3 class="banner__header">Тинькофф 20</h3>
+                                <p class="banner__text">Получите скидку в 20% при<br>оплате картой Тинькофф</p>
+                                <a class="banner__button">Подробнее</a>
+                            </div>
+                            <img src="images/tinkoff-card.png" alt="" class="banner__img">
+                        </div>
+                        <div class="swiper-slide banner">
+                            <div class="banner__data">
+                                <h3 class="banner__header">Отзыв</h3>
+                                <p class="banner__text">Дайте оценку ресторану и получите<br>бесплатное Капучино</p>
+                                <a class="banner__button">Оставить отзыв</a>
+                            </div>
+                            <img src="images/review.png" alt="" class="banner__img">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="categories">
+                    <div class="swiper-container-menu">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <a class="swiper-slide"><span>Супы</span></a>
+                            <a class="swiper-slide"><span>Хачапури</span></a>
+                            <a class="swiper-slide"><span>Холодные закуски</span></a>
+                            <a class="swiper-slide"><span>Хинкали</span></a>
+                            <a class="swiper-slide"><span>Шашлык</span></a>
+                            <a class="swiper-slide"><span>Соусы</span></a>
+                            <a class="swiper-slide"><span>Салаты</span></a>
+                            <a class="swiper-slide"><span>Горячие блюда</span></a>
+                            <a class="swiper-slide"><span>Гарнир</span></a>
+                            <a class="swiper-slide"><span>Десерты</span></a>
+                            <a class="swiper-slide"><span>Напитки</span></a>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="all-products">Все товары</div>
+                <div class="products">
+                    <div class="products__item">
+                        <a href="card.html">
+                            <div class="products__img">
+                                <!-- <img src="images/logo.png" alt=""> -->
+                            </div>
+                            <h3 class="products__header">Голень Говядины</h3>
+                            <p class="products__text">
+                                Описание мраморной говядины, состоящее из нескольких преложений. Можно
+                                наполнить.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <span class="products__price">
+                                <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                            </span>
+                            <a href="" class="products__buy">В корзину</a>
+                        </a>
+                    </div>
+                    <div class="products__item">
+                        <a href="card.html">
+                            <div class="products__img">
+                                <!-- <img src="images/logo.png" alt=""> -->
+                            </div>
+                            <h3 class="products__header">Голень Говядины</h3>
+                            <p class="products__text">
+                                Описание мраморной говядины, состоящее из нескольких преложений. Можно
+                                наполнить.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <span class="products__price">
+                                <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                            </span>
+                            <a href="" class="products__buy">В корзину</a>
+                        </a>
+                    </div>
+                    <div class="products__item">
+                        <a href="card.html">
+                            <div class="products__img">
+                                <!-- <img src="images/logo.png" alt=""> -->
+                            </div>
+                            <h3 class="products__header">Голень Говядины</h3>
+                            <p class="products__text">
+                                Описание мраморной говядины, состоящее из нескольких преложений. Можно
+                                наполнить.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <span class="products__price">
+                                <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                            </span>
+                            <a href="" class="products__buy">В корзину</a>
+                        </a>
+                    </div>
+                    <div class="products__item">
+                        <a href="card.html">
+                            <div class="products__img">
+                                <!-- <img src="images/logo.png" alt=""> -->
+                            </div>
+                            <h3 class="products__header">Голень Говядины</h3>
+                            <p class="products__text">
+                                Описание мраморной говядины, состоящее из нескольких преложений. Можно
+                                наполнить.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <span class="products__price">
+                                <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                            </span>
+                            <a href="" class="products__buy">В корзину</a>
+                        </a>
+                    </div>
+                    <div class="products__item">
+                        <a href="card.html">
+                            <div class="products__img">
+                                <!-- <img src="images/logo.png" alt=""> -->
+                            </div>
+                            <h3 class="products__header">Голень Говядины</h3>
+                            <p class="products__text">
+                                Описание мраморной говядины, состоящее из нескольких преложений. Можно
+                                наполнить.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <span class="products__price">
+                                <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                            </span>
+                            <a href="" class="products__buy">В корзину</a>
+                        </a>
+                    </div>
+                    <div class="products__item">
+                        <a href="card.html">
+                            <div class="products__img">
+                                <!-- <img src="images/logo.png" alt=""> -->
+                            </div>
+                            <h3 class="products__header">Голень Говядины</h3>
+                            <p class="products__text">
+                                Описание мраморной говядины, состоящее из нескольких преложений. Можно
+                                наполнить.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <span class="products__price">
+                                <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                            </span>
+                            <a href="" class="products__buy">В корзину</a>
+                        </a>
+                    </div>
+                    <div class="products__item">
+                        <a href="card.html">
+                            <div class="products__img">
+                                <!-- <img src="images/logo.png" alt=""> -->
+                            </div>
+                            <h3 class="products__header">Голень Говядины</h3>
+                            <p class="products__text">
+                                Описание мраморной говядины, состоящее из нескольких преложений. Можно
+                                наполнить.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <span class="products__price">
+                                <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                            </span>
+                            <a href="" class="products__buy">В корзину</a>
+                        </a>
+                    </div>
+                    <div class="products__item">
+                        <a href="card.html">
+                            <div class="products__img">
+                                <!-- <img src="images/logo.png" alt=""> -->
+                            </div>
+                            <h3 class="products__header">Голень Говядины</h3>
+                            <p class="products__text">
+                                Описание мраморной говядины, состоящее из нескольких преложений. Можно
+                                наполнить.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <span class="products__price">
+                                <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                            </span>
+                            <a href="" class="products__buy">В корзину</a>
+                        </a>
+                    </div>
+                    <div class="products__item">
+                        <a href="card.html">
+                            <div class="products__img">
+                                <!-- <img src="images/logo.png" alt=""> -->
+                            </div>
+                            <h3 class="products__header">Голень Говядины</h3>
+                            <p class="products__text">
+                                Описание мраморной говядины, состоящее из нескольких преложений. Можно
+                                наполнить.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <span class="products__price">
+                                <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                            </span>
+                            <a href="" class="products__buy">В корзину</a>
+                        </a>
+                    </div>
+                    <div class="products__item">
+                        <a href="card.html">
+                            <div class="products__img">
+                                <!-- <img src="images/logo.png" alt=""> -->
+                            </div>
+                            <h3 class="products__header">Голень Говядины</h3>
+                            <p class="products__text">
+                                Описание мраморной говядины, состоящее из нескольких преложений. Можно
+                                наполнить.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <span class="products__price">
+                                <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                            </span>
+                            <a href="" class="products__buy">В корзину</a>
+                        </a>
+                    </div>
+                    <div class="products__item">
+                        <a href="card.html">
+                            <div class="products__img">
+                                <!-- <img src="images/logo.png" alt=""> -->
+                            </div>
+                            <h3 class="products__header">Голень Говядины</h3>
+                            <p class="products__text">
+                                Описание мраморной говядины, состоящее из нескольких преложений. Можно
+                                наполнить.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <span class="products__price">
+                                <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                            </span>
+                            <a href="" class="products__buy">В корзину</a>
+                        </a>
+                    </div>
+                    <div class="products__item">
+                        <a href="card.html">
+                            <div class="products__img">
+                                <!-- <img src="images/logo.png" alt=""> -->
+                            </div>
+                            <h3 class="products__header">Голень Говядины</h3>
+                            <p class="products__text">
+                                Описание мраморной говядины, состоящее из нескольких преложений. Можно
+                                наполнить.
+                            </p>
+                            <div class="rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <span class="products__price">
+                                <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                            </span>
+                            <a href="" class="products__buy">В корзину</a>
+                        </a>
+                    </div>
+                </div>
+                <div class="pagination-products">
+                    <a class="pagination-products__item active">1</a>
+                    <a class="pagination-products__item">2</a>
+                    <a class="pagination-products__item">3</a>
+                    <a class="pagination-products__item">4</a>
+                    <a class="pagination-products__item">•••</a>
+                    <a class="pagination-products__item">8</a>
+                    <a class="pagination-products__item">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="home-video">
+            <div class="container">
+                <div class="home-video__video">
+                    <iframe class="yt-video" src="" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                    <img class="home-video__btn" src="images/play-btn.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="home-delivery">
+            <div class="container">
+                <div class="home-delivery__banner">
+                    <div class="home-delivery__info">
+                        <h3 class="home-delivery__text">Бесплатная доставка по Москве<br>при заказе от 1 999 RUB</h3>
+                        <a href="" class="home-delivery__btn">Оформить</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal" id="booking-modal">
+    <div class="modal-content wide">
+        <h2 class="modal-content__header">Бронирование стола</h2>
+        <form action="booking.php">
+            <input required type="text" class="modal-content__input" placeholder="Имя">
+            <input required type="tel" class="modal-content__input" placeholder="Телефон">
+            <input required type="number" class="modal-content__input" placeholder="Количество человек">
+            <input required type="date" class="modal-content__input" placeholder="Дата:  дд.мм.гг">
+            <input required type="time" class="modal-content__input" placeholder="Время: _ _ : _ _">
+            <button type="submit" class="modal-content__btn modal-content__btn--book">Забронировать</button>
+        </form>
+        <img src="images/iconsprite/modal-close.svg" alt="" class="modal-content__close">
+    </div>
+</div>
+<div class="modal" id="phone-check-modal">
+    <div class="modal-content wide">
+        <img src="images/iconsprite/person-modal.svg" alt="" class="modal-content__logo">
+        <h2 class="modal-content__header">Подтвердите номер телефона</h2>
+        <form action="mail.php">
+            <div class="modal-content__digits">
+                <input required type="text" class="modal-content__input modal-content__input--digit" maxlength="1">
+                <span></span>
+                <input required type="text" class="modal-content__input modal-content__input--digit" maxlength="1">
+                <span></span>
+                <input required type="text" class="modal-content__input modal-content__input--digit" maxlength="1">
+                <span></span>
+                <input required type="text" class="modal-content__input modal-content__input--digit" maxlength="1">
+            </div>
+            <div class="modal-content__phone-check">
+                <a class="modal-content__help modal-content__help--phone-check">Отправить повторно</a>
+                <b>1:59</b>
+            </div>
+            <button type="submit" class="modal-content__btn modal-content__btn--phone-check">Далее</button>
+        </form>
+        <img src="images/iconsprite/modal-close.svg" alt="" class="modal-content__close">
+
+    </div>
+</div>
+<div class="modal" id="mail-modal">
+    <div class="modal-content wide">
+        <img src="images/iconsprite/mail.svg" alt="" class="modal-content__logo">
+        <h2 class="modal-content__header">Подпишитесь на нашу рассылку и получите промокод на 500 RUB!</h2>
+        <form action="mail.php">
+            <input required type="email" class="modal-content__input mail" placeholder="E-mail">
+            <button type="submit" class="modal-content__btn modal-content__btn--mail">Отправить</button>
+        </form>
+        <img src="images/iconsprite/modal-close.svg" alt="" class="modal-content__close">
+
+    </div>
+</div>
+<div class="modal" id="register-modal">
+    <div class="modal-content">
+        <img src="images/iconsprite/person-modal.svg" alt="" class="modal-content__logo">
+        <h2 class="modal-content__header">Регистрация</h2>
+        <form action="login.php">
+            <input required type="tel" class="modal-content__input phone" placeholder="Телефон">
+            <input required type="password" class="modal-content__input pass" placeholder="Пароль">
+            <input required type="password" class="modal-content__input pass" placeholder="Подтвердите пароль">
+            <div class="modal-content__radio">
+                <div class="line">
+                    <input type="checkbox" class="radio" id="check-mailing">
+                    <label for="check-mailing" class="radio-text">Хочу получать выгодные предложения от магазина</label>
+                </div>
+                <div class="line">
+                    <input type="checkbox" class="radio" id="check-rules">
+                    <label for="check-rules" class="radio-text">Принимаю условия <a href="">Пользовательского
+                            соглашения, Политики
+                            конфиденциальности</a></label>
+                </div>
+
+            </div>
+            <button type="submit" class="modal-content__btn modal-content__btn--register">Зарегистрироваться</button>
+        </form>
+        <img src="images/iconsprite/modal-close.svg" alt="" class="modal-content__close">
+    </div>
+    <a class="modal-content__TEST" onclick="ShowModal('#phone-check-modal')">ФОРМА ПОДТВЕРЖДЕНИЯ ТЕЛЕФОНА</a>
+</div>
+<div class="modal" id="login-modal">
+    <div class="modal-content">
+        <img src="images/iconsprite/person-modal.svg" alt="" class="modal-content__logo">
+        <h2 class="modal-content__header">Войти в личный кабинет</h2>
+        <form action="login.php">
+            <input required type="tel" class="modal-content__input phone" placeholder="Телефон">
+            <input required type="password" class="modal-content__input pass" placeholder="Пароль">
+            <a href="" class="modal-content__help">Забыли пароль?</a>
+            <button type="submit" class="modal-content__btn modal-content__btn--login">Войти</button>
+        </form>
+        <span class="modal-content__text">Впервые у нас? <a
+                onclick="ShowModal('#register-modal')">Зарегистрироваться</a></span>
+        <img src="images/iconsprite/modal-close.svg" alt="" class="modal-content__close">
+    </div>
+    <a href="profile.html" class="modal-content__TEST">КАБИНЕТ ПРОФИЛЯ (ТЕСТОВЫЙ)</a>
+</div>
+<footer>
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="phones">
+                    <div class="phones__item">
+                        <span class="phones__text">Бесплатный звонок по РФ</span>
+                        <a href="tel:+79999999999" class="phones__phone">+7 (999) 999-99-99</a>
+                    </div>
+                    <div class="phones__item">
+                        <span class="phones__text">Для приема заказов</span>
+                        <a href="tel:+79988888888" class="phones__phone">+7 (998) 888-88-88</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <a href="mailto:contact@.ru" class="work__email">Email: contact@pirosmani.ru</a>
+                    <br>
+                    <span class="work__time">График работы по будням с 9:00 до 18:00</span>
+                </div>
+            </div>
+            <div class="footer__center">
+                <div class="social">
+                    <a href="https://instagram.com" class="social__instagram">Мы в instagram ></a>
+                    <a href="https://vk.com" class="social__vk">Мы в вконтакте ></a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="login">
+                    <img src="images/iconsprite/person-footer.svg" alt="" class="login__img">
+                    <a onclick="ShowModal('#login-modal')" class="login__text">Войти / Регистрация</a>
+                </div>
+            </div>
+            <!-- <div class="info">
+                <a href="" class="info__link">©2020. Пиросмани</a>
+                <a href="" class="info__link">Условия и соглашения</a>
+                <a href="" class="info__link">Политика конфиденциальности</a>
+            </div> -->
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.4/swiper-bundle.min.js"
+    integrity="sha512-hQQhpacNvYwkN+PyMQghLPCql/6OQfWNKVUkpW0KgCB5XjqtIkxm8UYny+gTjvIfvE/CrqrKEUOLotbHBFs/0Q=="
+    crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

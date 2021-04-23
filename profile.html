@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.4/swiper-bundle.min.css"
+        integrity="sha512-Uny/q0WcgHTmPEwEnudIstSn9ITJ5A4M69WwQ8kii9QmCKfIgwLZQjEo7W0O4yZpamS29cJP0LGrPqFBEzINIw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header>
+    <div class="container">
+        <nav class="nav flex-ai">
+            <img class="menu__open" src="images/iconsprite/menu-icon.svg" alt="">
+            <div class="nav__menu">
+                <div class="nav__menu__item">
+                    <span>Меню</span>
+                    <div class="nav__menu__sub">
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/soup-b.svg" alt="">Супы</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/hachapuri-b.svg" alt="">Хачапури</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/zakuski-b.svg" alt="">Холодные
+                            закуски</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/hincali-b.svg" alt="">Хинкали</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/shashlik-b.svg" alt="">Шашлык</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/sauce-b.svg" alt="">Соусы</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/salad-b.svg" alt="">Салаты</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/bluda-b.svg" alt="">Горячие
+                            блюда</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/garnir-b.svg" alt="">Гарнир</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/desert-b.svg" alt="">Десерты</a>
+                        <a class="nav__menu__sub-item"><img class="ico"
+                                src="images/iconsprite/menu/menu-icons/drink-b.svg" alt="">Напитки</a>
+                    </div>
+                </div>
+                <a href="delivery.html" class="nav__menu__item">Доставка</a>
+                <a href="pay.html" class="nav__menu__item">Оплата</a>
+                <a onclick="ShowModal('#booking-modal')" class="nav__menu__item">Бронь стола</a>
+            </div>
+            <a href="index.html" class="logo"><img src="images/logo.jpg" alt="" class="nav__logo logo"></a>
+            <div class="nav__right flex-ai">
+                <a href="tel:+380999999999" class="phone">
+                    <img src="images/iconsprite/phone.svg" alt="">
+                    <span>+7 (831) 282-60-00</span>
+                </a>
+                <a onclick="ShowModal('#login-modal')">
+                    <img src="images/iconsprite/person.svg" alt="">
+                </a>
+                <a href="cart.html">
+                    <img src="images/iconsprite/shopping-cart.svg" alt="">
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="sidebar">
+        <div class="sidebar__inner">
+                <div class="sidebar__top">
+                        <img class="menu__close" src="images/iconsprite/menu/back-menu.svg" alt="">
+                        <a class="sidebar__logo" href="index.html"><img src="images/logo.jpg" class="logo" alt=""></a>
+                </div>
+                <div class="menu">
+                        <div class="menu__item">
+                                <a class="menu__sub-btn" href="index.html"><i class="fa fa-home ico"></i>Главная</a>
+                        </div>
+                        <div class="menu__item">
+                                <a class="menu__sub-btn"><img class="ico" src="images/iconsprite/menu/menu.svg"
+                                                alt="">Меню <i class="fas fa-angle-right dropdown"></i></a>
+                                <div class="menu__sub">
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/soup.svg" alt="">Супы</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/hachapuri.svg"
+                                                        alt="">Хачапури</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/zakuski.svg"
+                                                        alt="">Холодные
+                                                закуски</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/hincali.svg"
+                                                        alt="">Хинкали</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/shashlik.svg"
+                                                        alt="">Шашлык</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/sauce.svg"
+                                                        alt="">Соусы</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/salad.svg"
+                                                        alt="">Салаты</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/bluda.svg" alt="">Горячие
+                                                блюда</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/garnir.svg"
+                                                        alt="">Гарнир</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/desert.svg"
+                                                        alt="">Десерты</a>
+                                        <a class="menu__sub-item"><img class="ico"
+                                                        src="images/iconsprite/menu/menu-icons/drink.svg"
+                                                        alt="">Напитки</a>
+                                </div>
+                        </div>
+                        <div class="menu__item">
+                                <a href="delivery.html" class="menu__sub-btn"><img class="ico"
+                                                src="images//iconsprite/menu/delivery.svg" alt="">Доставка</a>
+                        </div>
+                        <div class="menu__item">
+                                <a href="pay.html" class="menu__sub-btn"><img class="ico"
+                                                src="images//iconsprite/menu/pay.svg" alt="">Оплата</a>
+                        </div>
+                        <div class="menu__item">
+                                <a href="vacancy.html" class="menu__sub-btn"><img class="ico"
+                                                src="images//iconsprite/menu/vacansy.svg" alt="">Вакансии</a>
+                        </div>
+                        <div class="menu__item">
+                                <a class="menu__sub-btn" onclick="ShowModal('#booking-modal')"><i
+                                                class="far fa-calendar-alt ico"></i>Бронь
+                                        стола</a>
+                        </div>
+                        <div class="menu__item">
+                                <a href="support.html" class="menu__sub-btn"><img class="ico"
+                                                src="images//iconsprite/menu/support.svg" alt="">Поддержка</a>
+                        </div>
+                </div>
+        </div>
+</div>
+    <main>
+        <section>
+            <div class="container">
+                <div class="tab-option">
+                    <div class="tab-option__item active" onclick="showElement('.tab-option__elem','#option-1')">
+                        <svg width="45" height="45" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.711 0H1.85544C1.09808 0 0.481934 0.616146 0.481934 1.37351V13.7351C0.481934 14.4924 1.09808 15.1086 1.85544 15.1086H9.23803V16.4391C9.23803 16.6288 9.39178 16.7825 9.58141 16.7825C9.77104 16.7825 9.92478 16.6288 9.92478 16.4391V15.1944H11.6417V16.4391C11.6417 16.6288 11.7954 16.7825 11.985 16.7825C12.1747 16.7825 12.3284 16.6288 12.3284 16.4391V15.1086H19.711C20.4684 15.1086 21.0845 14.4924 21.0845 13.7351V1.37351C21.0845 0.616189 20.4684 0 19.711 0ZM20.3978 13.7351C20.3978 14.1137 20.0897 14.4218 19.711 14.4218H1.85544C1.47678 14.4218 1.16869 14.1137 1.16869 13.7351V1.37351C1.16869 0.994847 1.47678 0.686753 1.85544 0.686753H19.711C20.0897 0.686753 20.3978 0.994847 20.3978 1.37351V13.7351ZM15.9184 18.3868C15.8621 18.5676 15.67 18.6691 15.4885 18.6127C12.6024 17.7147 8.94552 17.7206 6.07798 18.6127C5.89689 18.6689 5.70443 18.5679 5.64807 18.3868C5.59172 18.2057 5.69284 18.0133 5.87393 17.9569C8.87512 17.0232 12.6745 17.0179 15.6925 17.9569C15.8736 18.0133 15.9747 18.2057 15.9184 18.3868ZM14.3632 6.40667C14.3027 5.85148 13.8361 5.43286 13.2776 5.43286H12.852V4.63773C12.852 3.4875 11.9162 2.55172 10.766 2.55172C9.61574 2.55172 8.68004 3.48746 8.68004 4.63768V5.43282H8.25443C7.69597 5.43282 7.22928 5.85148 7.1688 6.40663L6.63481 11.3118C6.5645 11.9576 7.0712 12.522 7.72044 12.522H13.8116C14.4613 12.522 14.9675 11.9572 14.8973 11.3118L14.3632 6.40667ZM13.8116 11.8353H7.72044C7.4787 11.8353 7.29134 11.6261 7.31753 11.3861L7.85152 6.48101C7.87393 6.27495 8.0472 6.11957 8.25443 6.11957H8.68004V6.79851C8.68004 6.98814 8.83379 7.14188 9.02342 7.14188C9.21305 7.14188 9.3668 6.98814 9.3668 6.79851V4.63764C9.3668 3.86607 9.99449 3.23838 10.766 3.23838C11.5376 3.23838 12.1653 3.86607 12.1653 4.63764V5.43277H10.3822C10.1926 5.43277 10.0389 5.58652 10.0389 5.77615C10.0389 5.96578 10.1926 6.11952 10.3822 6.11952H12.1653V6.79847C12.1653 6.98809 12.319 7.14184 12.5086 7.14184C12.6983 7.14184 12.852 6.98809 12.852 6.79847V6.11952H13.2776C13.4849 6.11952 13.6581 6.2749 13.6805 6.48097L14.2145 11.3861C14.2407 11.6263 14.0531 11.8353 13.8116 11.8353Z" />
+                        </svg>
+
+                        <span>Личные данные</span>
+                    </div>
+                    <div class="tab-option__item" onclick="showElement('.tab-option__elem','#option-2')">
+                        <svg width="45" height="45" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.8632 16.0759L19.2625 10.5583C19.1865 9.86007 18.5995 9.33351 17.8971 9.33351H17.4595V8.32933C17.4595 7.00272 16.3802 5.92346 15.0536 5.92346C13.727 5.92346 12.6477 7.00276 12.6477 8.32933V9.33347H12.2101C11.5078 9.33347 10.9207 9.86003 10.8447 10.5583L10.244 16.0759C10.1556 16.8882 10.7929 17.598 11.6094 17.598H18.4978C19.3135 17.5981 19.9517 16.8892 19.8632 16.0759ZM18.4978 16.9113H11.6095C11.1998 16.9113 10.8824 16.5569 10.9268 16.1503L11.5275 10.6327C11.5655 10.2836 11.859 10.0203 12.2102 10.0203H12.6478V10.8869C12.6478 11.0765 12.8015 11.2302 12.9911 11.2302C13.1807 11.2302 13.3345 11.0765 13.3345 10.8869V8.32937C13.3345 7.38145 14.1057 6.61025 15.0537 6.61025C16.0016 6.61025 16.7728 7.38145 16.7728 8.32937V9.33351H14.5994C14.4098 9.33351 14.256 9.48726 14.256 9.67688C14.256 9.86651 14.4098 10.0203 14.5994 10.0203H16.7728V10.8869C16.7728 11.0765 16.9265 11.2302 17.1162 11.2302C17.3058 11.2302 17.4595 11.0765 17.4595 10.8869V10.0203H17.8971C18.2483 10.0203 18.5418 10.2835 18.5798 10.6327L19.1805 16.1502C19.2249 16.5575 18.9069 16.9113 18.4978 16.9113ZM16.2555 18.8857C16.0658 18.8857 15.9121 19.0395 15.9121 19.2291C15.9121 19.6077 15.604 19.9158 15.2253 19.9158H2.26313C1.88448 19.9158 1.57639 19.6077 1.57639 19.2291V1.37385C1.57639 0.995202 1.88448 0.687114 2.26313 0.687114H11.9204V3.30531C11.9204 4.06266 12.5365 4.67879 13.2939 4.67879H16.2555C16.5607 4.67879 16.714 4.30834 16.4983 4.09261C12.1996 -0.206035 12.4779 0.0361701 12.3309 0.00702657C12.2835 -0.00237318 12.8304 0.000373778 2.26313 0.000373778C1.50578 0.000373778 0.889648 0.616508 0.889648 1.37385V19.2291C0.889648 19.9864 1.50578 20.6026 2.26313 20.6026H15.2253C15.9827 20.6026 16.5988 19.9864 16.5988 19.2291C16.5988 19.0394 16.4451 18.8857 16.2555 18.8857ZM13.2939 3.99205C12.9152 3.99205 12.6071 3.68396 12.6071 3.30531V1.17268L15.4265 3.99205H13.2939ZM6.34558 5.06525C6.3467 4.49509 5.88568 4.03313 5.31547 4.03313H4.62247C4.05449 4.03313 3.59236 4.49522 3.59236 5.06324V5.75362C3.59236 6.32164 4.05449 6.78373 4.62247 6.78373H5.31414C5.88109 6.78373 6.34322 6.3225 6.34425 5.7556L6.34558 5.06525ZM5.65751 5.75431C5.65717 5.94329 5.50312 6.09699 5.31414 6.09699H4.62247C4.43314 6.09699 4.2791 5.94295 4.2791 5.75362V5.06324C4.2791 4.87391 4.43314 4.71987 4.62247 4.71987H5.31547C5.50557 4.71987 5.65919 4.87382 5.65884 5.06388L5.65751 5.75431ZM6.34065 10.2156C6.34065 9.64761 5.87851 9.18552 5.31054 9.18552H4.6238C4.05582 9.18552 3.59369 9.64761 3.59369 10.2156V10.9024C3.59369 11.4704 4.05582 11.9325 4.6238 11.9325H5.31054C5.87851 11.9325 6.34065 11.4704 6.34065 10.9024V10.2156ZM5.65391 10.9024C5.65391 11.0917 5.49986 11.2457 5.31054 11.2457H4.6238C4.43447 11.2457 4.28043 11.0917 4.28043 10.9024V10.2156C4.28043 10.0263 4.43447 9.87226 4.6238 9.87226H5.31054C5.49986 9.87226 5.65391 10.0263 5.65391 10.2156V10.9024ZM5.31054 14.3361H4.6238C4.05582 14.3361 3.59369 14.7982 3.59369 15.3662V16.0529C3.59369 16.6209 4.05582 17.083 4.6238 17.083H5.31054C5.87851 17.083 6.34065 16.6209 6.34065 16.0529V15.3662C6.34065 14.7982 5.87851 14.3361 5.31054 14.3361ZM5.65391 16.0529C5.65391 16.2422 5.49986 16.3963 5.31054 16.3963H4.6238C4.43447 16.3963 4.28043 16.2422 4.28043 16.0529V15.3662C4.28043 15.1769 4.43447 15.0228 4.6238 15.0228H5.31054C5.49986 15.0228 5.65391 15.1769 5.65391 15.3662V16.0529ZM10.3805 5.75182H8.01985C7.83023 5.75182 7.67648 5.59808 7.67648 5.40845C7.67648 5.21882 7.83023 5.06508 8.01985 5.06508H10.3805C10.5701 5.06508 10.7239 5.21882 10.7239 5.40845C10.7239 5.59808 10.5701 5.75182 10.3805 5.75182ZM9.39333 10.9024H8.01985C7.83023 10.9024 7.67648 10.7486 7.67648 10.559C7.67648 10.3694 7.83023 10.2156 8.01985 10.2156H9.39333C9.58296 10.2156 9.7367 10.3694 9.7367 10.559C9.7367 10.7486 9.58296 10.9024 9.39333 10.9024ZM8.87828 15.3662C9.06791 15.3662 9.22165 15.5199 9.22165 15.7095C9.22165 15.8992 9.06791 16.0529 8.87828 16.0529H8.01985C7.83023 16.0529 7.67648 15.8992 7.67648 15.7095C7.67648 15.5199 7.83023 15.3662 8.01985 15.3662H8.87828Z" />
+                        </svg>
+
+                        <span>История заказов</span>
+                    </div>
+                </div>
+                <div class="tab-option__elem active" id="option-1">
+                    <div class="profile">
+                        <form action="profile-settings.php">
+                            <div class="profile__top">
+                                <h1 class="info__header">Персональная информация</h1>
+                                <div class="profile__photo">
+                                    <img id="photo-img-profile" src="images/profile-default.jpg" alt="">
+                                    <input type="file" id="photo-file" accept="image/*">
+                                    <label class="profile__upload" for="photo-file">Загрузить фотографию</label>
+                                </div>
+                                <div class="profile__fio">
+                                    <div class="profile__line">
+                                        <div class="input-item">
+                                            <p class="input-text">Ваше имя</p>
+                                            <input required type="text" class="input-field" placeholder="Имя">
+                                        </div>
+                                        <div class="input-item">
+                                            <p class="input-text">Ваша фамилия</p>
+                                            <input required type="text" class="input-field" placeholder="Фамилия">
+                                        </div>
+                                    </div>
+                                    <div class="input-item">
+                                        <p class="input-text">Ваше отчество</p>
+                                        <input type="text" class="input-field" placeholder="Отчество">
+                                    </div>
+                                    <div class="input-item">
+                                        <p class="input-text">Адрес электронной почты</p>
+                                        <input type="text" class="input-field" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile__bottom">
+                                <h1 class="info__header">Контактная информация<br><span>(подтверждение заказов)</span>
+                                </h1>
+                                <div class="profile__phone">
+                                    <div class="input-item">
+                                        <p class="input-text">Основной телефон</p>
+                                        <input required type="text" class="input-field" placeholder="+380">
+                                    </div>
+                                    <div class="input-item">
+                                        <p class="input-text">Дополнительный</p>
+                                        <input type="text" class="input-field" placeholder="+380">
+                                    </div>
+                                </div>
+                                <h1 class="info__header">Изменение пароля</h1>
+                                <div class="profile__password">
+                                    <div class="input-item">
+                                        <p class="input-text">Ваш старый пароль</p>
+                                        <input required type="text" class="input-field" placeholder="Старый пароль">
+                                    </div>
+                                    <div class="input-item">
+                                        <p class="input-text">Ваш новый пароль</p>
+                                        <input required type="text" class="input-field" placeholder="Новый пароль">
+                                    </div>
+                                    <div class="input-item">
+                                        <p class="input-text">Подтверждение</p>
+                                        <input required type="text" class="input-field"
+                                            placeholder="Подтвердите пароль">
+                                    </div>
+                                </div>
+                                <button class="profile__btn">Сохранить изменения</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-option__elem" id="option-2">
+                    <div class="order-history">
+                        <div class="order-history__item">
+                            <div class="order-history__line"><b>Номер заказа:</b><a class="good">Заказ №2334678954</a>
+                            </div>
+                            <div class="order-history__line"><b>Способ оплаты:</b>Банковская карта</div>
+                            <div class="order-history__line"><b>Дата заказа:</b>19.05.2020</div>
+                            <div class="order-history__line"><b>Дата доставки:</b>23.05.2020</div>
+                            <div class="order-history__line"><b>Статус заказа:</b><a class="good">Доставлен</a></div>
+                            <div class="order-history__repeat">Повторить заказ <img src="images/repeat.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="order-history__item">
+                            <div class="order-history__line"><b>Номер заказа:</b><a class="good">Заказ №2334678954</a>
+                            </div>
+                            <div class="order-history__line"><b>Способ оплаты:</b>Банковская карта</div>
+                            <div class="order-history__line"><b>Дата заказа:</b>19.05.2020</div>
+                            <div class="order-history__line"><b>Дата доставки:</b>23.05.2020</div>
+                            <div class="order-history__line"><b>Статус заказа:</b><a class="bad">Доставлен</a></div>
+                        </div>
+                        <a href="index.html" class="order-history__btn">Перейти в каталог</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal" id="booking-modal">
+    <div class="modal-content wide">
+        <h2 class="modal-content__header">Бронирование стола</h2>
+        <form action="booking.php">
+            <input required type="text" class="modal-content__input" placeholder="Имя">
+            <input required type="tel" class="modal-content__input" placeholder="Телефон">
+            <input required type="number" class="modal-content__input" placeholder="Количество человек">
+            <input required type="date" class="modal-content__input" placeholder="Дата:  дд.мм.гг">
+            <input required type="time" class="modal-content__input" placeholder="Время: _ _ : _ _">
+            <button type="submit" class="modal-content__btn modal-content__btn--book">Забронировать</button>
+        </form>
+        <img src="images/iconsprite/modal-close.svg" alt="" class="modal-content__close">
+    </div>
+</div>
+<div class="modal" id="phone-check-modal">
+    <div class="modal-content wide">
+        <img src="images/iconsprite/person-modal.svg" alt="" class="modal-content__logo">
+        <h2 class="modal-content__header">Подтвердите номер телефона</h2>
+        <form action="mail.php">
+            <div class="modal-content__digits">
+                <input required type="text" class="modal-content__input modal-content__input--digit" maxlength="1">
+                <span></span>
+                <input required type="text" class="modal-content__input modal-content__input--digit" maxlength="1">
+                <span></span>
+                <input required type="text" class="modal-content__input modal-content__input--digit" maxlength="1">
+                <span></span>
+                <input required type="text" class="modal-content__input modal-content__input--digit" maxlength="1">
+            </div>
+            <div class="modal-content__phone-check">
+                <a class="modal-content__help modal-content__help--phone-check">Отправить повторно</a>
+                <b>1:59</b>
+            </div>
+            <button type="submit" class="modal-content__btn modal-content__btn--phone-check">Далее</button>
+        </form>
+        <img src="images/iconsprite/modal-close.svg" alt="" class="modal-content__close">
+
+    </div>
+</div>
+<div class="modal" id="mail-modal">
+    <div class="modal-content wide">
+        <img src="images/iconsprite/mail.svg" alt="" class="modal-content__logo">
+        <h2 class="modal-content__header">Подпишитесь на нашу рассылку и получите промокод на 500 RUB!</h2>
+        <form action="mail.php">
+            <input required type="email" class="modal-content__input mail" placeholder="E-mail">
+            <button type="submit" class="modal-content__btn modal-content__btn--mail">Отправить</button>
+        </form>
+        <img src="images/iconsprite/modal-close.svg" alt="" class="modal-content__close">
+
+    </div>
+</div>
+<div class="modal" id="register-modal">
+    <div class="modal-content">
+        <img src="images/iconsprite/person-modal.svg" alt="" class="modal-content__logo">
+        <h2 class="modal-content__header">Регистрация</h2>
+        <form action="login.php">
+            <input required type="tel" class="modal-content__input phone" placeholder="Телефон">
+            <input required type="password" class="modal-content__input pass" placeholder="Пароль">
+            <input required type="password" class="modal-content__input pass" placeholder="Подтвердите пароль">
+            <div class="modal-content__radio">
+                <div class="line">
+                    <input type="checkbox" class="radio" id="check-mailing">
+                    <label for="check-mailing" class="radio-text">Хочу получать выгодные предложения от магазина</label>
+                </div>
+                <div class="line">
+                    <input type="checkbox" class="radio" id="check-rules">
+                    <label for="check-rules" class="radio-text">Принимаю условия <a href="">Пользовательского
+                            соглашения, Политики
+                            конфиденциальности</a></label>
+                </div>
+
+            </div>
+            <button type="submit" class="modal-content__btn modal-content__btn--register">Зарегистрироваться</button>
+        </form>
+        <img src="images/iconsprite/modal-close.svg" alt="" class="modal-content__close">
+    </div>
+    <a class="modal-content__TEST" onclick="ShowModal('#phone-check-modal')">ФОРМА ПОДТВЕРЖДЕНИЯ ТЕЛЕФОНА</a>
+</div>
+<div class="modal" id="login-modal">
+    <div class="modal-content">
+        <img src="images/iconsprite/person-modal.svg" alt="" class="modal-content__logo">
+        <h2 class="modal-content__header">Войти в личный кабинет</h2>
+        <form action="login.php">
+            <input required type="tel" class="modal-content__input phone" placeholder="Телефон">
+            <input required type="password" class="modal-content__input pass" placeholder="Пароль">
+            <a href="" class="modal-content__help">Забыли пароль?</a>
+            <button type="submit" class="modal-content__btn modal-content__btn--login">Войти</button>
+        </form>
+        <span class="modal-content__text">Впервые у нас? <a
+                onclick="ShowModal('#register-modal')">Зарегистрироваться</a></span>
+        <img src="images/iconsprite/modal-close.svg" alt="" class="modal-content__close">
+    </div>
+    <a href="profile.html" class="modal-content__TEST">КАБИНЕТ ПРОФИЛЯ (ТЕСТОВЫЙ)</a>
+</div>
+<footer>
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="phones">
+                    <div class="phones__item">
+                        <span class="phones__text">Бесплатный звонок по РФ</span>
+                        <a href="tel:+79999999999" class="phones__phone">+7 (999) 999-99-99</a>
+                    </div>
+                    <div class="phones__item">
+                        <span class="phones__text">Для приема заказов</span>
+                        <a href="tel:+79988888888" class="phones__phone">+7 (998) 888-88-88</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <a href="mailto:contact@.ru" class="work__email">Email: contact@pirosmani.ru</a>
+                    <br>
+                    <span class="work__time">График работы по будням с 9:00 до 18:00</span>
+                </div>
+            </div>
+            <div class="footer__center">
+                <div class="social">
+                    <a href="https://instagram.com" class="social__instagram">Мы в instagram ></a>
+                    <a href="https://vk.com" class="social__vk">Мы в вконтакте ></a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="login">
+                    <img src="images/iconsprite/person-footer.svg" alt="" class="login__img">
+                    <a onclick="ShowModal('#login-modal')" class="login__text">Войти / Регистрация</a>
+                </div>
+            </div>
+            <!-- <div class="info">
+                <a href="" class="info__link">©2020. Пиросмани</a>
+                <a href="" class="info__link">Условия и соглашения</a>
+                <a href="" class="info__link">Политика конфиденциальности</a>
+            </div> -->
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.4/swiper-bundle.min.js"
+    integrity="sha512-hQQhpacNvYwkN+PyMQghLPCql/6OQfWNKVUkpW0KgCB5XjqtIkxm8UYny+gTjvIfvE/CrqrKEUOLotbHBFs/0Q=="
+    crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
